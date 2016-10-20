@@ -1,0 +1,13 @@
+{
+  "name": "campus",
+  "version": "0.0.1",
+  "description": "PostGraphQL Experiments",
+  "author": "April Arcus",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
