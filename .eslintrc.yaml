@@ -1,0 +1,16 @@
+parserOptions:
+  ecmaVersion: 2017
+  sourceType: module
+plugins:
+  - node
+extends: 
+  - eslint:recommended
+  - plugin:node/recommended
+rules:
+  no-console: 1
+  no-unused-vars:
+    - 1
+    - args: all
+      argsIgnorePattern: ^_
+      caughtErrors: all
+      caughtErrorsIgnorePattern: ^_
