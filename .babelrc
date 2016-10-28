@@ -10,5 +10,6 @@
   plugins: [
     'transform-es2015-destructuring', // https://github.com/babel/babel/issues/4074
     'transform-es2015-parameters',    // https://github.com/babel/babel/issues/4074
-  ],
+    'transform-object-rest-spread',
+],
 }
