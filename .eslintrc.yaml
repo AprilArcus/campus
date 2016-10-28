@@ -7,10 +7,27 @@ extends:
   - eslint:recommended
   - plugin:node/recommended
 rules:
-  no-console: 1
+  no-console: warn
   no-unused-vars:
-    - 1
+    - warn
     - args: all
       argsIgnorePattern: ^_
       caughtErrors: all
       caughtErrorsIgnorePattern: ^_
+  node/exports-style: off # prefer ecmascript module syntax
+  node/no-deprecated-api: error
+  node/no-missing-import: error
+  node/no-missing-require: error
+  node/no-unpublished-bin: error
+  node/no-unpublished-import: off  # these seem to break for .json files?
+  node/no-unpublished-require: off # this too
+  node/no-unsupported-features: off
+  node/process-exit-as-throw: error
+  node/shebang: error
+settings:
+  node:
+    tryExtensions:
+      - .js
+      - .jsx
+      - .json
+      - .node
