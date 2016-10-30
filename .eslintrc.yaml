@@ -1,13 +1,17 @@
 parserOptions:
   ecmaVersion: 2017
+  parser: babel-eslint
   sourceType: module
   ecmaFeatures:
     experimentalObjectRestSpread: on
 plugins:
   - node
+  - flowtype
+  - flowtype-errors
 extends: 
   - eslint:recommended
   - plugin:node/recommended
+  - plugin:flowtype/recommended
 rules:
   no-console: warn
   no-unused-vars:
@@ -26,6 +30,7 @@ rules:
   node/no-unsupported-features: off
   node/process-exit-as-throw: error
   node/shebang: error
+  flowtype-errors/show-errors: error
 settings:
   node:
     tryExtensions:

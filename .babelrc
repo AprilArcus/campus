@@ -6,6 +6,7 @@
       },
       loose: true,
     }],
+    'react',
   ],
   plugins: [
     'transform-es2015-destructuring', // https://github.com/babel/babel/issues/4074
