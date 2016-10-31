@@ -2,7 +2,7 @@ import type Server from 'http';
 
 declare module 'koa' {
 
-  declare type KoaError = Error & {
+  declare export type KoaError = Error & {
     expose?: boolean;
     status?: number;
     code?: string;
